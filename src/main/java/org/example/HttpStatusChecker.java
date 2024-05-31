@@ -9,7 +9,7 @@ public class HttpStatusChecker {
     String getStatusImage(int code, int priznakException) {
 
         String path = Integer. toString(code) + ".jpg";
-        String result = "";
+        String result = "***";
         try {
 
             URI uri = new URI("https", "http.cat", "/" + path, null);

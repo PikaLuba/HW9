@@ -12,7 +12,7 @@ public class HttpStatusImageDownloader {
         HttpStatusChecker httpStatusChecker = new HttpStatusChecker();
         String linkToPicture = httpStatusChecker.getStatusImage(code, priznakException);
 
-        if (linkToPicture != "") {
+        if (!linkToPicture.equals("***")) {
             try {
                 System.out.println( linkToPicture);
 

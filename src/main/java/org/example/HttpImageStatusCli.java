@@ -17,7 +17,7 @@ public class HttpImageStatusCli {
                 HttpStatusImageDownloader downloadImage = new HttpStatusImageDownloader();
                 String linkToPicture = downloadImage.downloadStatusImage(code, priznakException);
 
-                if (linkToPicture == "") {
+                if (linkToPicture.equals("***")) {
                     System.out.println("There is not image for HTTP status " + code);
                     code = -1;
                 }
